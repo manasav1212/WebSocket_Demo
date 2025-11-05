@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Real Time Chat</title>
+</head>
+<body>
+    <h1>WebSocket Chat Demo</h1>
+    <div>
+        <input type="checkbox", id="scrtgl">
+        <label for="scrtgl">Use Secure WebSocket</label>
+    </div><br>
+    <h2>Received Message</h2>
+    <div id="rcvdmsg" style="border: 1px solid black; width:400px; height:30px; color: gray;">
+        No Message Yet
+    </div><br>
+    <h2>Send Message</h2>
+    <div>
+        <input type="text", placeholder="Type the Message here..", id="msg", style="width: 400px; height: 25px; border:1px solid black;">
+        <button id="btn" onclick="sendMessage()">Send</button>
+    </div>
+    <script src="webSocket_Protocol.js"></script>
+</body>
+</html>
