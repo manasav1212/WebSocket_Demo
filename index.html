@@ -11,14 +11,13 @@
         <input type="checkbox", id="scrtgl">
         <label for="scrtgl">Use Secure WebSocket</label>
     </div><br>
-    <h2>Received Message</h2>
-    <div id="rcvdmsg" style="border: 1px solid black; width:400px; height:30px; color: gray;">
-        No Message Yet
+    <h2>ChatBox</h2>
+    <div id="rcvdmsg" style="border: 1px solid black; width:400px; height:300px; max-height: 300px; overflow-y: auto;">
     </div><br>
     <h2>Send Message</h2>
     <div>
         <input type="text", placeholder="Type the Message here..", id="msg", style="width: 400px; height: 25px; border:1px solid black;">
-        <button id="btn" onclick="sendMessage()">Send</button>
+        <button id="btn" onclick="sendMessage()" style="height: 25px; background:forestgreen">Send</button>
     </div>
     <script src="webSocket_Protocol.js"></script>
 </body>
